@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@webruan">
+
+    <!-- Social Media Sharing -->
+    <meta property="og:url" content="https://casagrandeboschcar.com/">
+    <meta property="og:site_name" content="Casagrande Bosch Car Service">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Centro Automotivo Casagrande">
+    <meta property="og:description" content="A Casagrande Bosch Car Service é uma rede credenciada da maior rede de oficinas do mundo! São mais de 16.000 credenciadas em mais de 150 países que contam com toda qualidade e tradição Bosch.">
+
+    <!-- Search Engines -->
+    <meta name="keywords" content="Mecânica automotiva, Centro automotivo, Serviços automotivos, Troca de óleo, Alinhamento e balanceamento, Freios automotivos, Suspensão automotiva, Mecânica geral, Injeção eletrônica, Ar-condicionado automotivo, Manutenção preventiva, Manutenção corretiva, Revisão automotiva, Diagnóstico automotivo, Oficina mecânica, Peças automotivas, Pneus automotivos, Escapamentos automotivos, Filtros automotivos, Lubrificantes automotivos, Casagrande Bosch, Casagrande Bosch Car, Casagrande Car, Casagrande mecânica.">
+    <meta name="description" content="A Casagrande Bosch Car Service é uma rede credenciada da maior rede de oficinas do mundo! São mais de 16.000 credenciadas em mais de 150 países que contam com toda qualidade e tradição Bosch.">
+
+    <link rel="shortcut icon" href="./src/assets/images/desktop/logo.webp" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./src/styles/normalize.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./src/styles/desktop.css" media="print" onload="this.media='all'" async>
+    <link rel="stylesheet" media="(min-width: 768px)" href="./src/styles/tablet.css" media="print" onload="this.media='all'" async>
+    <link rel="stylesheet" media="(min-width: 320px)" href="./src/styles/mobile.css" media="print" onload="this.media='all'" async>
+    <link rel="stylesheet" href="./styles/menu.css">
+
+    <title>Casagrande Bosch Car Service</title>
+
+    <script>
+      window.addEventListener('pageshow', function (event) {
+        if (event.persisted) {
+          // Recarregamento do cache (mobile)
+          window.scrollTo(0, 0);
+        }
+      });
+
+      function scrollToTopSmooth() {
+        const scrollToTop = () => {
+          if (window.scrollY != 0) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            requestAnimationFrame(scrollToTop);
+          }
+        };
+        scrollToTop();
+      }
+
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 100);
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="row main">
+          <div class="img">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./src/assets/images/desktop/logo.webp">
+              <source media="(min-width: 768px)" srcset="./src/assets/images/tablet/logo.webp">
+              <source media="(min-width: 320px)" srcset="./src/assets/images/mobile/logo.webp">
+              <img loading="lazy" src="./src/assets/images/desktop/logo.webp" alt="Casagrande Bosch Car Service Logo">
+            </picture>
+          </div>
+
+          <div class="row links">
+            <a href="#services">
+              <h6>Serviços</h6>
+            </a>
+            
+            <a href="#about">
+              <h6>Sobre</h6>
+            </a>
+            
+            <a href="#feedbacks">
+              <h6>Clientes</h6>
+            </a>
+            
+            <a href="#differentials">
+              <h6>Diferencial</h6>
+            </a>
+          </div>
+
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/" class="button">Entrar em contato</a>
+        </div>
+
+        <div class="menu-button" id="menu-button">
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+
+      <div class="menu-modal" id="menu-modal">
+        <div class="column">
+          <i class="bi bi-x" id="close"></i>
+
+          <div class="item link-button">
+            <a href="#services">
+              <h6>Serviços</h6>
+            </a>
+          </div>
+
+          <div class="item link-button">
+            <a href="#about">
+              <h6>Sobre</h6>
+            </a>
+          </div>
+          
+          <div class="item link-button">
+            <a href="#feedbacks">
+              <h6>Clientes</h6>
+            </a>
+          </div>
+          
+          <div class="item link-button">
+            <a href="#differentials">
+              <h6>Diferencial</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="column main">
+            <div class="row">
+              <h1>
+                Serviço de <span>qualidade</span> para uma viagem tranquila.
+              </h1>
+
+              <div class="column right">
+                <p>
+                  Em nosso centro automotivo, vamos além de apenas consertar seu veículo. Fornecemos serviços e <span>experiência inigualáveis.</span> Da manutenção de rotina aos grandes reparos, você pode confiar em nós para oferecer o cuidado da <span>mais alta qualidade</span> para o seu carro.
+                </p>
+
+                <a href="#services">Ver serviços oferecidos <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./src/assets/images/desktop/car-hero.webp">
+                <source media="(min-width: 768px)" srcset="./src/assets/images/tablet/car-hero.webp">
+                <source media="(min-width: 320px)" srcset="./src/assets/images/mobile/car-hero.webp">
+                <img loading="lazy" src="./src/assets/images/desktop/car-hero.webp" alt="Civic Azul">
+              </picture>
+            </div> 
+          </div>
+        </div>
+      </section>
+
+      <section id="infos">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <h4>+5</h4>
+              <small>Anos de serviço de qualidade</small>
+            </div>
+
+            <span class="bar"></span>
+
+            <div class="column">
+              <h4>+3.000</h4>
+              <small>Clientes satisfeitos</small>
+            </div>
+
+            <span class="bar"></span>
+
+            <div class="column">
+              <h4>+10</h4>
+              <small>Técnicos especializados</small>
+            </div>
+
+            <span class="bar"></span>
+
+            <div class="column">
+              <h4>+21.200</h4>
+              <small>Carros concertados</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="column main">
+            <div class="column title">
+              <div class="title">
+                <h2>Nossos serviços</h2>
+                <span>Nossos serviços</span>
+              </div>
+
+              <p>
+                Nós oferecemos uma ampla gama de serviços para manter seu carro em ótimo estado e garantir sua <span>segurança na estrada.</span> Oferecemos serviços completos de estética automotiva para manter seu carro <span>brilhando como novo.</span> Além disso, usamos apenas <span>peças de qualidade</span> para garantir reparos duradouros. Você pode confiar que seu carro está em boas mãos em nosso centro automotivo!
+              </p>
+            </div>
+
+            <div class="column down">
+              <div class="row" id="row-01">
+                <div class="column item" id="item-01">
+                  <h6>Mecânica em geral</h6>
+                  <p>Análise de falha com equipamentos de diagnóstico de última geração (KTS e Osciloscópio).</p>
+
+                  <div class="img" id="section-03-img-01"></div>
+                </div>
+
+                <div class="column item" id="item-02">
+                  <h6>Elétrica e eletrônica</h6>
+                  <p>Equipamento de teste de última geração: KTS 590. Profissionais especializados e capacitados.</p>
+
+                  <div class="img" id="section-03-img-02"></div>
+                </div>
+
+                <div class="column item" id="item-03">
+                  <h6>Alinhamento e balanceamento</h6>
+                  <p>Uso dos equipamentos de teste de última geração, além do extenso conhecimento de nossos mecânicos especializados.</p>
+
+                  <div class="img" id="section-03-img-03"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <i class="bi bi-arrow-left-circle" id="prevItem"></i>
+                <div class="img" id="section-03-img-04"></div>
+                <i class="bi bi-arrow-right-circle" id="nextItem"></i>
+              </div>
+
+              <div class="row" id="row-03">
+                <div class="column item" id="item-04">
+                  <div class="img" id="section-03-img-05"></div>
+                  
+                  <h6>Troca de óleo</h6>
+                  <p>Método de sucção a vácuo com recipiente transparente com escala (Trocador de óleo Bosch)</p>
+                </div>
+
+                <div class="column item" id="item-05">
+                  <div class="img" id="section-03-img-06"></div>
+                  
+                  <h6>Ar condicionado</h6>
+                  <p>Substituição de fluido refrigerante, substituição do filtro de cabine e mais.</p>
+                </div>
+
+                <div class="column item" id="item-06">
+                  <div class="img" id="section-03-img-07"></div>
+
+                  <h6>Amortecedores, pneus e suspensão</h6>
+                  <p>Peças de reposição originais, teste de fluido e sangrador pneumático.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="column main">
+            <div class="title">
+              <h2>Sobre nós</h2>
+              <span>Sobre nós</span>
+            </div>
+
+            <div class="row main">
+              <div class="column left">
+                <p>
+                  A Bosch Car Service é a <span>maior rede de oficinas do mundo!</span> São mais de 16.000 credenciadas em mais de 150 países que contam com toda qualidade e tradição Bosch. Com nossa ampla gama de serviços especializados, oferecemos tudo que você precisa para o seu carro - <span>inspeção, diagnóstico e reparo completo.</span> No Brasil contamos com uma rede de aproximadamente 1.000 oficinas espalhadas por todos os estados do território nacional. Conte conosco e <span>deixe o seu carro em boas mãos!</span>
+                </p>
+
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/" class="button cta">Entrar em contato</a>
+              </div>
+
+              <div class="row right">
+                <div class="row slides">
+                  <div class="column">
+                    <i class="bi bi-arrow-up-circle" id="next"></i>
+                    <div class="column dots" id="dots"></div>
+                    <i class="bi bi-arrow-down-circle" id="prev"></i>
+                  </div>
+
+                  <div class="slides" id="slides"></div>
+                </div>
+
+                <div class="column items">
+                  <div class="column item">
+                    <h5>Dedicação</h5>
+                    <small>no conserto do seu automóvel</small>
+                  </div>
+
+                  <div class="column item">
+                    <h5>Agilidade</h5>
+                    <small>na identificação dos problemas do seu veículo</small>
+                  </div>
+
+                  <div class="column item">
+                    <h5>Eficiência</h5>
+                    <small>no atendimento e resolução dos problemas</small>
+                  </div>
+                </div>
+              </div>
+
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/" class="button cta">Entrar em contato</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="feedbacks">
+        <div class="container">
+          <div class="column main">
+            <div class="title">
+              <h2>Clientes satisfeitos</h2>
+              <span>Clientes satisfeitos</span>
+            </div>
+
+            <div class="column caroussel">
+              <div class="row testimonials" id="testimonials"></div>
+            
+              <div class="row pagination">
+                <i class="bi bi-arrow-left-circle caroussel-prev" id="prevFeedback"></i>
+                <div class="row feedbacks-dots"></div>
+                <i class="bi bi-arrow-right-circle caroussel-next" id="nextFeedback"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="container">
+          <div class="column main">
+            <div class="title">
+              <h2>Contatos</h2>
+              <span>Contatos</span>
+            </div>
+
+            <div class="row main">
+              <div class="column">
+                <div class="item">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/" class="row">
+                    <i class="bi bi-whatsapp"></i>
+                    <h6>WhatsApp</h6>
+                  </a>
+                </div>
+
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/">
+                  <p>(11) 9 3802-3538</p>
+                </a>
+              </div>
+
+              <div class="column">
+                <div class="item">
+                  <a href="tel:+000000" class="row">
+                    <i class="bi bi-telephone"></i>
+                    <h6>Telefone</h6>
+                  </a>
+                </div>
+
+                <a href="tel:+000000">
+                  <p>(11) 4220-5769</p>
+                </a>
+              </div>
+
+              <div class="column">
+                <div class="item">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/" class="row">
+                    <i class="bi bi-instagram"></i>
+                    <h6>Instagram</h6>
+                  </a>
+                </div>
+
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/">
+                  <p>@casagrandeboschcar</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="differential">
+        <div class="container">
+          <div class="column main">
+            <div class="title">
+              <h2>Nosso diferencial</h2>
+              <span>Nosso diferencial</span>
+            </div>
+  
+            <div class="column">
+              <div class="row">
+                <div class="column">
+                  <div class="icon">
+                    <i class="bi bi-person-check"></i>
+                  </div>
+  
+                  <h6>Profissionais treinados pela Bosch</h6>
+                  <p>
+                    Contamos com uma equipe altamente qualificada, com treinamentos constantes pela Bosch, garantindo excelência na manutenção e reparo do seu veículo.
+                  </p>
+                </div>
+  
+                <div class="column">
+                  <div class="icon">
+                    <i class="bi bi-motherboard"></i>
+                  </div>
+  
+                  <h6>Tecnologia de ponta</h6>
+                  <p>
+                    Investimos em tecnologia de última geração para garantir diagnósticos precisos e reparos de qualidade, garantindo a segurança e o desempenho do seu carro.
+                  </p>
+                </div>
+  
+                <div class="column">
+                  <div class="icon">
+                    <i class="bi bi-car-front"></i>
+                  </div>
+  
+                  <h6>Tradição no ramo automobilístico</h6>
+                  <p>
+                    Com mais de 100 anos de tradição no mercado, somos uma referência em centro automotivo, oferecendo confiança e segurança aos nossos clientes.
+                  </p>
+                </div>
+              </div>
+  
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/webruan/" class="button cta">Entrar em contato</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="container">
+          <div class="row main">
+            <div class="column left">
+              <div class="column text">
+                <h3>Confira alguns de nossos materiais</h3>
+                <p>
+                  Criamos materiais exclusivos para mantê-lo atualizado sobre as mais recentes novidades da Bosch e garantir que seu carro esteja sempre seguro e protegido. Acesse mais materiais clicando no botão abaixo!
+                </p>
+              </div>
+
+              <a href="https://www.instagram.com/webruan/" title="Ver mais">Ver mais</a>
+            </div>
+
+            <div class="row right">
+              <div class="column right">
+                <div class="column items">
+                  <div class="row blog-item active" id="01">
+                    <p>Tipos de gasolina</p>
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </div>
+
+                  <div class="row blog-item" id="02">
+                    <p>Dicas: Carro em dia</p>
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </div>
+
+                  <div class="row blog-item" id="03">
+                    <p>Porque a Bosch?</p>
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </div>
+
+                  <div class="row blog-item" id="04">
+                    <p>Fluidos de freio</p>
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </div>
+
+                  <div class="row blog-item" id="05">
+                    <p>Economizando combustível</p>
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </div>
+                </div>
+
+                <i class="bi bi-chevron-compact-down"></i>
+              </div>
+
+              <div class="img">
+                <img loading="lazy" src="./src/assets/images/01.webp" alt="Dica - Bosch" id="image">
+              </div>
+            </div>
+
+            <a href="https://www.instagram.com/webruan/" title="Ver mais" class="button">Ver mais</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="column main">
+          <div class="column map">
+            <h5>Como nos encontrar:</h5>
+            <iframe id="iframe" title="mapa" src="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <small>Av. Pres. Kennedy, 2653 - Santa Paula, São Caetano do Sul - SP, 09561-200</small>
+          </div>
+
+          <div class="row main">
+            <div class="column left">
+              <p><span>CNPJ:</span> 44.407.170/0001-60</p>
+              <div class="column">
+                <div class="row">
+                  <i class="bi bi-instagram"></i>
+                  <p><a href="https://www.instagram.com/webruan/" target="_blank" rel="noopener noreferrer" title="Instagram">@casagrandeboschcar</a></p>
+                </div>
+
+                <div class="row">
+                  <i class="bi bi-whatsapp"></i>
+                  <p><a href="https://www.instagram.com/webruan/" target="_blank" rel="noopener noreferrer" title="WhatsApp">(00) 0 0000-0000</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="img" id="footer-img-01">
+
+            </div>
+
+            <small>
+              <a href="./pages/termos.html" target="_blank" rel="noopener noreferrer" title="Termos de uso">Termos de uso</a> | <a href="./pages/privacidade.html" target="_blank" rel="noopener noreferrer" title="Política de privacidade">Política de privacidade</a>
+            </small>
+          </div>
+
+          <small>Copyright 2023 © Todos os direitos reservados à Casagrande Bosch Car Service</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <div id="icons"></div>
+  <script src="./src/js/jquery.js" defer></script>
+  <script src="./src/js/lazy.js" defer></script>
+  <script src="./src/js/slides.js" defer></script>
+  <script src="./src/js/feedbacks.js" defer></script>
+  <script src="./src/js/caroussel.js" defer></script>
+  <script src="./src/js/blog.js" defer></script>
+  <script src="./src/js/menu.js" defer></script>
+</html>

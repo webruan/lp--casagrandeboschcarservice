@@ -1,0 +1,52 @@
+nav .menu-button,
+header .menu-modal {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  nav .menu-button {
+    margin-right: 16px;
+    display: block;
+  }
+  
+  nav .menu-button i {
+    font-size: 0px;
+  }
+  
+  .menu-modal {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    display: none;
+  
+    background-color: var();
+  
+    z-index: 100;
+  }
+  
+  .menu-modal .column {
+    width: 100%;
+  
+    margin: 20% auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-modal i {
+    color: var();
+  
+    font-size: 0;
+  }
+  
+  .menu-modal .item {
+    width: 100%;
+  }
+  
+  .menu-modal .item a h6 {
+    color: var();
+  
+    text-align: center;
+  }
+}
